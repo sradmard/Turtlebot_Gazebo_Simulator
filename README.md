@@ -4,17 +4,21 @@ This is a repository for Turtlebot robot simulator in Gazebo simulation environm
 In order to start with this simulator, first create a workspace, and an src folder within that workspace:
 
 $ mkdir gaz_turtle_ws
+
 $ cd gaz_turtle_ws
+
 $ mkdir src
 
 Then download the "Turtlebot_Gazebo_Simulator" mega package in the src folder:
 
 $ cd src
+
 $ git clone https://github.com/sradmard/Turtlebot_Gazebo_Simulator.git
 
 Then within your workspace main folder compile the package:
 
 $ cd ..
+
 $ catkin_make
 
 If catkin_make compiles without any error, then the package is properly installed and is ready. You just need to set up the environment correctly. In order to do that either type in the following command in each terminal, or add it to ~/.bashrc:
@@ -24,6 +28,7 @@ $ source ~/gaz_turtle_ws/devel/setup.bash
 - Make sure the environment variables are set properly in each terminal (or add the export line to ~/.bashrc):
 
 $ env | grep TURTLEBOT
+
 $ export TURTLEBOT_GAZEBO_WORLD_FILE=/home/sina/catkin_ws/src/turtlebot_simulator/turtlebot_gazebo/worlds/empty.world
 
 - After setting the environment, lunch turtlebot in an empty world, objects can be added to the environment through gazebo interface. 
